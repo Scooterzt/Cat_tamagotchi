@@ -1,0 +1,20 @@
+﻿
+<div class="container">
+    <h5>Fullnes: @ViewBag.full</h5>
+    <h5>Happines: @ViewBag.happy</h5>
+    <h5>Meals: @ViewBag.meals</h5>
+    <h5>Energy: @ViewBag.Energy</h5>
+</div>
+    <img src="~/img/cat.jpg" alt="Cat">
+    <p>@ViewBag.message</p>
+    @{
+        if(ViewBag.restart != null){
+            <a href="/restart"><button>Restart?</button></a>
+        }
+        else{
+            <a href="/feed"><button>Feed</button></a>
+            <a href="/play"><button>Play</button></a>
+            <a href="/work"><button>Work</button></a>
+            <a href="/sleep"><button>Sleep</button></a>
+        }
+    }
